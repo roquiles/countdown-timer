@@ -5,7 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown Timer</title>
+    <link rel="shortcut icon" href="/clock-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main-div">
+      <h1 class="main-title">Countdowm Timer</h1>
+      <p class="instructions">Add your event and see how much time is left</p>
+      <button id="btn-open-modal" type="button">Start now!</button>
+    </div>
+
+    <!--MODAL WINDOW-->
+    <div class="modal hidden">
+      <div>
+        <h2>Event informations</h2>
+        <button id="btn-close-modal" type="button">X</button>
+      </div>
+      <div>
+        <form method="get" class="event-form">
+          <label class="label-event" for="event-name">Event name:</label>
+          <input
+            class="input-event"
+            type="text"
+            id="event-name"
+            name="event-name"
+          />
+          <label class="label-event" for="event-date">Date:</label>
+          <input
+            class="input-event"
+            type="date"
+            id="event-date"
+            name="event-date"
+          />
+          <label class="label-event" for="event-time">Time:</label>
+          <input
+            class="input-event"
+            type="time"
+            id="event-time"
+            name="event-time"
+          />
+          <input id="btn-submit" type="submit" value="Start counting" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Developed by <a href="https://github.com/roquiles">Roberta Quiles</a>
+      </p>
+    </footer>
+  </body>
 </html>
