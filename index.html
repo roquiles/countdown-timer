@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown Timer</title>
-    <link rel="shortcut icon" href="/clock-icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/clock.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-div">
-      <h1 class="main-title">Countdowm Timer</h1>
-      <p class="instructions">Add your event and see how much time is left</p>
-      <button class="btn-open-modal" type="button">Start now!</button>
+      <div class="img-box">
+        <img class="clock-img" src="/clock.png" alt="clock icon" />
+      </div>
+
+      <h1 class="main-title">countdown <br />timer</h1>
+      <div class="btn-box">
+        <button class="btn-open-modal" type="button">Start now!</button>
+      </div>
     </div>
 
     <div class="div-clock hidden">
@@ -57,8 +68,9 @@
     </div>
 
     <footer>
-      <p>
-        Developed by <a href="https://github.com/roquiles">Roberta Quiles</a>
+      <p class="credits">
+        Developed by
+        <a href="https://github.com/roquiles" class="link">Roberta Quiles</a>
       </p>
     </footer>
   </body>
