@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <div class="main-div">
+    <section class="main-div hidden">
       <div class="img-box">
         <img class="clock-img" src="/clock.png" alt="clock icon" />
       </div>
@@ -24,14 +24,34 @@
       <div class="btn-box">
         <button class="btn-modal">Start now!</button>
       </div>
-    </div>
+    </section>
 
-    <div class="div-clock hidden">
+    <section class="div-clock">
       <h2 class="name">Name of the event</h2>
-      <h1 class="clock">2:23:40:54</h1>
-      <p class="label-clock">Days Hours Minutes Seconds</p>
-      <button class="btn-modal">Add more events</button>
-    </div>
+
+      <div class="counter">
+        <div>
+          <p class="clock" id="days" name="days">2 :</p>
+          <label class="label-clock" for="days">Days</label>
+        </div>
+
+        <div>
+          <p class="clock" id="hours" name="hours">23 :</p>
+          <label class="label-clock" for="hours">Hours</label>
+        </div>
+
+        <div>
+          <p class="clock" id="min" name="min">40 :</p>
+          <label class="label-clock" for="min">Minutes</label>
+        </div>
+
+        <div>
+          <p class="clock" id="sec" name="sec">56</p>
+          <label class="label-clock" for="sec">Seconds</label>
+        </div>
+      </div>
+      <button id="btn-add-events" class="btn-modal">Add more events</button>
+    </section>
 
     <!--MODAL WINDOW-->
     <div class="modal hidden">
@@ -81,7 +101,7 @@
     </div>
     <div class="overlay hidden"></div>
 
-    <footer>
+    <footer class="page-footer">
       <p class="credits">
         Developed by
         <a href="https://github.com/roquiles" class="link">Roberta Quiles</a>
