@@ -22,7 +22,7 @@
 
       <h1 class="main-title">countdown <br />timer</h1>
       <div class="btn-box">
-        <button class="btn-open-modal" type="button">Start now!</button>
+        <button class="btn-open-modal">Start now!</button>
       </div>
     </div>
 
@@ -30,16 +30,18 @@
       <h2 class="name">Name of the event</h2>
       <h1 class="clock">2:23:40:54</h1>
       <p class="label-clock">Days Hours Minutes Seconds</p>
-      <button class="btn-open-modal" type="button">Add more events</button>
+      <button class="btn-open-modal">Add more events</button>
     </div>
 
     <!--MODAL WINDOW-->
     <div class="modal hidden">
-      <div>
-        <h2>Event informations</h2>
-        <button id="btn-close-modal" type="button">X</button>
-      </div>
-      <div>
+      <header class="header-modal">
+        <div class="div-header-modal">
+          <h2 class="modal-title">Event informations</h2>
+          <button id="btn-close-modal" type="button">X</button>
+        </div>
+      </header>
+      <div class="form">
         <form method="get" class="event-form">
           <label class="label-event" for="event-name">Event name:</label>
           <input
@@ -48,6 +50,7 @@
             id="event-name"
             name="event-name"
           />
+
           <label class="label-event" for="event-date">Date:</label>
           <input
             class="input-event"
@@ -55,6 +58,7 @@
             id="event-date"
             name="event-date"
           />
+
           <label class="label-event" for="event-time">Time:</label>
           <input
             class="input-event"
@@ -62,10 +66,10 @@
             id="event-time"
             name="event-time"
           />
-          <input id="btn-submit" type="submit" value="Start counting" />
-        </form>
       </div>
+      <div class="btn-submit"><button id="btn-submit">Start counting</button></div>
     </div>
+    <div class="overlay hidden"></div>
 
     <footer>
       <p class="credits">
@@ -73,5 +77,6 @@
         <a href="https://github.com/roquiles" class="link">Roberta Quiles</a>
       </p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
