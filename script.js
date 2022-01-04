@@ -1,17 +1,18 @@
 "use strict";
 
-const btnOpenModal = document.querySelectorAll(".btn-open-modal");
+const btnsOpenCloseModal = document.querySelectorAll(".btn-modal");
+const btnCloseModal = document.getElementById("btn-close-modal");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 
 // MODAL WINDOW
 
-const openModal = function (e) {
+const openCloseModal = function (e) {
   e.preventDefault();
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
+  modal.classList.toggle("hidden");
+  overlay.classList.toggle("hidden");
 };
 
-btnOpenModal.forEach((element) => {
-  element.addEventListener("click", openModal);
+btnsOpenCloseModal.forEach((element) => {
+  element.addEventListener("click", openCloseModal);
 });
