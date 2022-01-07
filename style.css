@@ -1,0 +1,190 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.main-div {
+  width: 800px;
+  height: 500px;
+  margin: 40px auto 40px auto;
+  padding: 30px;
+  border: 5px solid black;
+  position: relative;
+}
+
+.main-title {
+  font-family: "Righteous", cursive;
+  font-size: 110px;
+  text-align: left;
+  margin: -90px 0px;
+}
+
+.clock-img {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  width: 200px;
+}
+
+.img-box {
+  text-align: right;
+}
+
+.btn-modal {
+  font-family: "Righteous", cursive;
+  font-size: 30px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 100px;
+  background-color: rgb(118, 238, 38);
+}
+
+.btn-box {
+  text-align: right;
+}
+
+.btn-modal:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.credits {
+  font-size: 13px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  transition: 2s;
+}
+
+.link:hover {
+  color: rgb(118, 238, 38);
+  transition: 0.3s;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal {
+  z-index: 1000;
+  width: 400px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  border-radius: 5%;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.div-header-modal {
+  margin-top: 40px;
+  height: 60px;
+  justify-content: flex-center;
+  flex-direction: row;
+}
+
+#btn-close-modal {
+  position: absolute;
+  margin: 0;
+  top: 1rem;
+  right: 1.5rem;
+  padding: 0;
+  font-family: inherit;
+  border: none;
+  background-color: inherit;
+  font-size: 25px;
+}
+
+#btn-close-modal:hover {
+  color: rgb(118, 238, 38);
+  transition: 0.5s;
+}
+
+.event-form {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-submit {
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 3rem;
+  background-color: rgb(118, 238, 38);
+}
+
+#btn-submit:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.div-clock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.name {
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.clock {
+  font-family: "Righteous", cursive;
+  font-size: 100px;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.label-clock {
+  font-size: 30px;
+}
+
+#btn-add-events {
+  width: 400px;
+  align-self: center;
+}
