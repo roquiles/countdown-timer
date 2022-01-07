@@ -6,7 +6,7 @@ const overlay = document.querySelector(".overlay");
 
 // MODAL WINDOW
 
-const openCloseModal = function (e) {
+const toggleModal = function (e) {
   e.preventDefault();
   modal.classList.toggle("hidden");
   overlay.classList.toggle("hidden");
