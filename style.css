@@ -158,12 +158,14 @@ footer {
 .div-clock {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter {
+  width: 700px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
 }
 
@@ -171,6 +173,10 @@ footer {
   font-size: 40px;
   margin-top: 100px;
   margin-bottom: 0;
+}
+
+.clock-box {
+  text-align: center;
 }
 
 .clock {
@@ -187,4 +193,13 @@ footer {
 #btn-add-events {
   width: 400px;
   align-self: center;
+}
+
+.warning-message {
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
 }

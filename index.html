@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <section class="main-div hidden">
+    <section class="main-div">
       <div class="img-box">
         <img class="clock-img" src="/clock.png" alt="clock icon" />
       </div>
@@ -26,27 +26,28 @@
       </div>
     </section>
 
-    <section class="div-clock">
-      <h2 class="name">Name of the event</h2>
+    <!--COUNTDOWN CLOCK-->
+    <section class="div-clock hidden">
+      <h2 class="name"></h2>
 
       <div class="counter">
-        <div>
-          <p class="clock" id="days" name="days">2 :</p>
+        <div class="clock-box">
+          <p class="clock" id="days" name="days"></p>
           <label class="label-clock" for="days">Days</label>
         </div>
 
-        <div>
-          <p class="clock" id="hours" name="hours">23 :</p>
+        <div class="clock-box">
+          <p class="clock" id="hours" name="hours"></p>
           <label class="label-clock" for="hours">Hours</label>
         </div>
 
-        <div>
-          <p class="clock" id="min" name="min">40 :</p>
+        <div class="clock-box">
+          <p class="clock" id="min" name="min"></p>
           <label class="label-clock" for="min">Minutes</label>
         </div>
 
-        <div>
-          <p class="clock" id="sec" name="sec">56</p>
+        <div class="clock-box">
+          <p class="clock" id="sec" name="sec"></p>
           <label class="label-clock" for="sec">Seconds</label>
         </div>
       </div>
@@ -73,6 +74,9 @@
               id="event-name"
               name="event-name"
             />
+            <p class="warning-message hidden" id="name-warning">
+              Please enter an event name
+            </p>
           </div>
 
           <div>
@@ -83,6 +87,9 @@
               id="event-date"
               name="event-date"
             />
+            <p class="warning-message hidden" id="date-warning">
+              Please enter a future date
+            </p>
           </div>
 
           <div>
