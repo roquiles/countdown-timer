@@ -23,19 +23,17 @@ const clock = document.querySelectorAll(".clock");
 
 const toggleModal = function (e) {
   e.preventDefault();
-  modal.classList.toggle("hidden");
   overlay.classList.toggle("hidden");
 
   resetModal();
 };
 
 btnsOpenCloseModal.forEach((element) => {
-  element.addEventListener("click", openCloseModal);
+  element.addEventListener("click", toggleModal);
 });
 
 document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-    modal.classList.add("hidden");
+  if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
     overlay.classList.add("hidden");
   }
 });
@@ -48,8 +46,7 @@ function startCountdownTimer(futureDate) {
   // Set the initial time
   let timeLeft = futureDate - now;
 
-  // Call the timer every second
-  setInterval(function () {
+  function getTimeLeft() {
     let days = timeLeft / (1000 * 60 * 60 * 24);
     let hours = (days % 1) * 24;
     let minutes = (hours % 1) * 60;
@@ -64,7 +61,11 @@ function startCountdownTimer(futureDate) {
 
     // Decrease 1s
     timeLeft -= 1000;
-  }, 1000);
+  }
+
+  getTimeLeft();
+  // Call the timer every second
+  setInterval(getTimeLeft, 1000);
 }
 
 function resetModal() {
@@ -113,8 +114,6 @@ btnStart.addEventListener("click", function (e) {
 
     // Reset modal window input fields
     resetModal();
-    openCloseModal();
+    overlay.classList.add("hidden");
   }
-
-  // console.log(futureDate);
 });

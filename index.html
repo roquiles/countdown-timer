@@ -55,58 +55,60 @@
     </section>
 
     <!--MODAL WINDOW-->
-    <div class="modal hidden">
-      <header class="header-modal">
-        <div class="div-header-modal">
-          <h2 class="modal-title">Event informations</h2>
-          <button class="btn-modal" id="btn-close-modal" type="button">
-            X
-          </button>
+
+    <div class="overlay hidden">
+      <div class="modal">
+        <header class="header-modal">
+          <div class="div-header-modal">
+            <h2 class="modal-title">Event informations</h2>
+            <button class="btn-modal" id="btn-close-modal" type="button">
+              X
+            </button>
+          </div>
+        </header>
+        <div class="form">
+          <form method="get" class="event-form">
+            <div class="div-form">
+              <label class="label-event" for="event-name">Event name:</label>
+              <input
+                class="input-event"
+                type="text"
+                id="event-name"
+                name="event-name"
+              />
+              <p class="warning-message hidden" id="name-warning">
+                Please enter an event name
+              </p>
+            </div>
+
+            <div>
+              <label class="label-event" for="event-date">Date:</label>
+              <input
+                class="input-event"
+                type="date"
+                id="event-date"
+                name="event-date"
+              />
+              <p class="warning-message hidden" id="date-warning">
+                Please enter a future date
+              </p>
+            </div>
+
+            <div>
+              <label class="label-event" for="event-time">Time:</label>
+              <input
+                class="input-event"
+                type="time"
+                id="event-time"
+                name="event-time"
+              />
+            </div>
+
+            <button id="btn-submit">Start counting</button>
+          </form>
         </div>
-      </header>
-      <div class="form">
-        <form method="get" class="event-form">
-          <div class="div-form">
-            <label class="label-event" for="event-name">Event name:</label>
-            <input
-              class="input-event"
-              type="text"
-              id="event-name"
-              name="event-name"
-            />
-            <p class="warning-message hidden" id="name-warning">
-              Please enter an event name
-            </p>
-          </div>
-
-          <div>
-            <label class="label-event" for="event-date">Date:</label>
-            <input
-              class="input-event"
-              type="date"
-              id="event-date"
-              name="event-date"
-            />
-            <p class="warning-message hidden" id="date-warning">
-              Please enter a future date
-            </p>
-          </div>
-
-          <div>
-            <label class="label-event" for="event-time">Time:</label>
-            <input
-              class="input-event"
-              type="time"
-              id="event-time"
-              name="event-time"
-            />
-          </div>
-
-          <button id="btn-submit">Start counting</button>
-        </form>
       </div>
     </div>
-    <div class="overlay hidden"></div>
 
     <footer class="page-footer">
       <p class="credits">
