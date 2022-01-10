@@ -21,7 +21,8 @@ const clock = document.querySelectorAll(".clock");
 
 // MODAL WINDOW
 
-const openCloseModal = function () {
+const toggleModal = function (e) {
+  e.preventDefault();
   modal.classList.toggle("hidden");
   overlay.classList.toggle("hidden");
 
